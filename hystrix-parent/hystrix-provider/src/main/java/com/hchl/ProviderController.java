@@ -9,7 +9,7 @@ public class ProviderController {
 
     @RequestMapping("/getUser")
     public String getUser() throws InterruptedException {
-        Thread.sleep(5000L);
+//        Thread.sleep(5000L);
         return "success";
     }
 }
