@@ -37,8 +37,8 @@ public class SleuthProviderApplication
     public String trace()
     {
         logger.info(" = = = <call trace-2> == = ");
-
-        return restTemplate().getForEntity("http://hystrix-provider/getUser", String.class).getBody();
+        return "succeed";
+//        return restTemplate().getForEntity("http://hystrix-provider/getUser", String.class).getBody();
     }
 
     public static void main(String[] args)

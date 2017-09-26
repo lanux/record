@@ -2,6 +2,7 @@ package com.hchl;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.sleuth.zipkin.stream.EnableZipkinStreamServer;
 import zipkin.server.EnableZipkinServer;
 
 /**
@@ -11,7 +12,7 @@ import zipkin.server.EnableZipkinServer;
  * 创建日期：2017/9/26
  * 编码作者：hcl
  */
-@EnableZipkinServer
+@EnableZipkinStreamServer
 @SpringBootApplication
 public class ZipkinApplication
 {
